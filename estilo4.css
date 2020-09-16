@@ -1,0 +1,58 @@
+body{
+    background-color: white;
+    background: white;
+    
+}
+
+
+nav.navbar-transparente{
+    padding: 15px 0px;
+    background: rgba(0,0,0,1)
+}
+
+#cont{
+    background: url(fundo1.jpg);
+}
+
+#logo{
+    font-size:23px;
+    font-family: 'Merriweather', serif;
+    color:forestgreen;
+    
+}
+
+#logo1{
+    font-size:23px;
+    font-family: 'Merriweather', serif;
+    color:white;
+    
+    
+    
+}
+.navbar-light .navbar-nav .nav-link{
+   color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+   color: white;
+}
+
+.navbar-light .navbar-toggler{
+    color="white";
+    background-color: "white";
+    border-color: rgba(255,255,255,1);
+}
+
+.divisor{
+    width: 1px;
+    background: white;
+    
+}
+
+
+h2{ 
+    font-family: sans-serif;
+    color: rgba(0,0,0.7);
+    font-kerning: normal;
+    font-feature-settings: "kern" 1;
+}
