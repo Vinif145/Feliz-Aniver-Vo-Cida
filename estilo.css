@@ -175,11 +175,21 @@ body {
   height: 5vh;
   margin-top: 10vh;
   margin-bottom: 10vh;
-  margin-left: 1vh;
+  padding-left: 3vh;
   transform: translateX(-300px);
   transition: transform 0.7s 0s cubic-bezier(1, 0.005, 0.24, 1);
 
   }
+}
 
+@media(min-width: 750px){
+  .menu_items li{
+  height: 5vh;
+  margin-top: 10vh;
+  margin-bottom: 15vh;
+  padding-left: 3vh;
+  transform: translateX(-300px);
+  transition: transform 0.7s 0s cubic-bezier(1, 0.005, 0.24, 1);
 
+  }
 }
