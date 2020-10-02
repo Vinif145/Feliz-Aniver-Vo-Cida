@@ -18,7 +18,7 @@ html, body {
 }
 .content {
   height: 200%;
-  padding-left: 15px;
+  padding-left: 10vh;
   transform-origin: top left;
   transition: transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
   background-color: #f0f0f0;
@@ -170,7 +170,15 @@ body {
             border-radius: 50px;
         }
 
-@media(max-width: 600px){
+@media(max-width: 650px){
+  .menu_items li{
+  height: 5vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  transform: translateX(-300px);
+  transition: transform 0.7s 0s cubic-bezier(1, 0.005, 0.24, 1);
+
+  }
 
 
 }
