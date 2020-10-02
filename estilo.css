@@ -175,6 +175,7 @@ body {
   height: 5vh;
   margin-top: 10vh;
   margin-bottom: 10vh;
+  margin-left: 1vh;
   transform: translateX(-300px);
   transition: transform 0.7s 0s cubic-bezier(1, 0.005, 0.24, 1);
 
