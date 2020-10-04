@@ -28,6 +28,7 @@ html, body {
   overflow-y: auto;
   padding: 50px 20%;
 }
+
 /* basically all styling from now on */
 .menu_toggle {
   z-index: 900;
@@ -149,9 +150,7 @@ html, body {
 .shazam .menu_items li:nth-child(3) {
   transition-delay: 0.48s;
 }
-.shazam .menu_items li:nth-child(4){
-  transition-delay: 0.49s;
-}
+
 h1 {
   padding-bottom: 15px;
   border-bottom: 1px solid #ddd;
