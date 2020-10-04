@@ -19,7 +19,7 @@
 	<body>
 
   <div class="page">
-    <div class="container">
+    <div class="container" id="teste">
      <div class="row ">
       
   	   <span class="menu_toggle" id="menu">
@@ -49,10 +49,7 @@
           <i class="fa fa-youtube"></i>
       </div>
 
-      <div>
-     <input type="button" name="socoroo" value="Desativar menu" onclick="desapear('menu')">
-     </div>
-
+  
       <br><br>
       <p>Do <strong>not</strong> push that big, red button in the corner. People will die. You have been warned. Do&hellip; not do it.</p>
         
@@ -87,23 +84,17 @@ $('.content').on('click', function(){
     
 </script>
 
-<script>
-  
-function desapear(obj){
-  document.getElementById(obj).hidden=true; 
-}
-
+ <script> 
+ $(document).ready( () => {     
+var menu1 = $(".menu_toggle");
 $(document).scroll( function() {
-      var scroll = $(document).scrollTop();
-      if(scroll > 50) {
-        document.getElementById('menu').hidden=true;
-      }
-      if(scroll < 60 ) {
-        document.getElementById('menu').hidden=false; 
-      }
-    });    
-
+    var scroll = $(document).scrollTop();
+    if(scroll < 40  ) $(".menu_toggle").fadeIn();
+    if(scroll > 30 )  $(".menu_toggle").fadeOut();
+});       
+});
 </script>
+
 
 
  </body>
