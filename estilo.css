@@ -252,6 +252,11 @@ p.titulo.animation{
  }
   .menu_items li{
   height: 5vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  padding-left: 3vh;
+
+
   }
 
 
