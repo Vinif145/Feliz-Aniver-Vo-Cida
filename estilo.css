@@ -14,13 +14,11 @@ html, body {
 
 .page {
 
-  height: 100%;
+  height: auto;
   background-color: #584e4a;
 }
 .content {
-
   height: 200%;
-  padding-left: 10vh;
   transform-origin: top left;
   transition: transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
   background-color: white;
@@ -30,7 +28,7 @@ html, body {
   padding: 50px 20%;
 }
 
-/* basically all styling from now on */
+/* Aqui fica a parte do Menu*/
 .menu_toggle {
 
   z-index: 900;
@@ -124,7 +122,7 @@ html, body {
 .menu_items a:active .icon {
   color: #f37272;
 }
-/* Let's open up the menu */
+/* Para Abir o menu*/
 
 .shazam {
   /*.content_inner {
@@ -169,26 +167,38 @@ body {
             border-radius: 50px;
         }
 
-@media(max-width: 650px){
-  .menu_items li{
-  height: 5vh;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-  padding-left: 3vh;
-  transform: translateX(-300px);
-  transition: transform 0.7s 0s cubic-bezier(1, 0.005, 0.24, 1);
+.titulo{
+  font-style: 'Especial Elite', sans-serif;
+  font-size: 3em; 
+  border-right: 2px solid black; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
 
+}
+
+@keyframes titulo_emsi{
+  from{
+    width: 0;
+  }
+  to{
+    width: 11em;
   }
 }
 
-@media(min-width: 750px){
-  .menu_items li{
-  height: 5vh;
-  margin-top: 10vh;
-  margin-bottom: 15vh;
-  padding-left: 3vh;
-  transform: translateX(-300px);
-  transition: transform 0.7s 0s cubic-bezier(1, 0.005, 0.24, 1);
+@keyframes CursorTitulo{
+  from{
+    border-right-color: black;
 
-  }
+    } 
+
+  to{
+   border-right-color: transparent;
+    }
 }
+
+.animations{
+  animation: CursorTitulo 600ms steps(40) infinite normal, /* Aqui o infinite pode ser alterado, assim iria parar de piscar*/
+  titulo_emsi 6s steps(40) 0.5s normal both; 
+}
+
