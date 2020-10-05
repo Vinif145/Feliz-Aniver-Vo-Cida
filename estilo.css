@@ -28,6 +28,8 @@ html, body {
   padding: 50px 20%;
 }
 
+
+
 /* Aqui fica a parte do Menu*/
 .menu_toggle {
 
@@ -169,11 +171,12 @@ body {
 
 .titulo{
   font-style: 'Especial Elite', sans-serif;
-  font-size: 3em; 
+  font-size: max(20px, 6vw); 
   border-right: 2px solid black; 
   white-space: nowrap;
   overflow: hidden;
   text-align: center;
+
 
 }
 
@@ -182,7 +185,7 @@ body {
     width: 0;
   }
   to{
-    width: 11em;
+    width: 9em;
   }
 }
 
@@ -202,3 +205,41 @@ body {
   titulo_emsi 6s steps(40) 0.5s normal both; 
 }
 
+#tit{
+  margin-top: 5vh;
+  margin-left: -2vh;
+
+}
+
+.subtitu{
+  background-color: #b9c941;
+  -webkit-border-radius: 10px 10px 30px 10px; /* Para versões antigas do Safari*/
+  -moz-border-radius: 10px 10px 30px 10px; /* Para versões antigas do Chrome*/
+  border-radius: 10px 10px 30px 10px;
+  size: min(70px, 5vw);
+}
+
+.espaco{
+  font-size: min(70px, 5vw);
+}
+
+@media(max-width: 770px){
+ ul.menu_items{
+  position: absolute;
+  margin-bottom: 30vh;
+ }
+
+ .menu_toggle {
+
+  z-index: 900;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  cursor: pointer;
+  width: 80px;
+  height: 60px;
+  background-color: #f37272;
+  border-bottom-right-radius: 100%;
+}
+}
