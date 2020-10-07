@@ -15,17 +15,18 @@ html, body {
 .page {
 
   height: auto;
-  background-color: #584e4a;
+  background-color: #dddddd;
 }
 .content {
   height: 200%;
   transform-origin: top left;
   transition: transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
-  background-color: white;
+  background-color: #2f2339;
 }
 .content_inner {
   height: 50%;
-  padding: 50px ;
+  padding-top: 50px;
+
 }
 
 
@@ -177,6 +178,9 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-align: center;
+  color: white;
+  margin-left: 3vh;
+  
 
 
 
@@ -215,30 +219,35 @@ body {
 
 p.titulo.animation{
   position: center;
+
 }
 
 .subtitu{
-  background-color: #b9c941;
+  background-color: #8bc440;
   -webkit-border-radius: 10px 10px 30px 10px; /* Para versões antigas do Safari*/
   -moz-border-radius: 10px 10px 30px 10px; /* Para versões antigas do Chrome*/
   border-radius: 10px 10px 30px 10px;
-  size: min(70px, 6vw);
-  padding-left: 1vh;
+  margin-left: 3vh;
 }
-
 .espaco{
-  font-size: min(70px, 5vw);
+  font-size: min(70px, 6vw);
   text-align: center;
+  color: white;
 }
 .espaco2{
   margin-top: 2vh;
   font-size: min(70px, 6vw);
   text-align: center;
+  color: white;
+}
+.espaco3{
+  margin-left: 3vh;
 }
 
 .texto{
-  text-align: left;
-  font-size:  2vh;
+  text-align: justify all;
+  font-size:  min(19px, 3vh);
+  color: white;
 
 }
 
@@ -276,7 +285,8 @@ p.titulo.animation{
 
 .tit{
   margin-top: 1vh;
-  margin-left: -2vh;
+  margin-left: 1vh;
+  margin-right: 1vh;
 
 }
 
