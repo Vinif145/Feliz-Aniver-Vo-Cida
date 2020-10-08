@@ -7,28 +7,29 @@
 html, body {
   height: 100%;
   font-family: 'Roboto Condensed', sans-serif;
+  
 }
+
 .cor_para{
   border: 1px solid #f94646;
 }
 
 .page {
 
-  height: auto;
-  background-color: #dddddd;
+  height: 100%;
+
+ 
 }
 .content {
   height: 200%;
   transform-origin: top left;
   transition: transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
-  background-color: #2f2339;
+  background-color: #EFEFEF;
 }
 .content_inner {
   height: 50%;
   padding-top: 50px;
-
 }
-
 
 
 /* Aqui fica a parte do Menu*/
@@ -44,6 +45,10 @@ html, body {
   height: 80px;
   background-color: #f37272;
   border-bottom-right-radius: 100%;
+}
+#menu{
+    background-color: #FF3B37;
+
 }
 .menu_toggle:active i {
   opacity: 0.8;
@@ -93,7 +98,7 @@ html, body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #a4a4a4;
+  color: black;
   transition: color 0.2s;
 }
 .menu_items a .icon {
@@ -117,7 +122,7 @@ html, body {
   transition: border-color 0.2s;
 }
 .menu_items a:hover {
-  color: #f0f0f0;
+  color: #FF3B37;
 }
 .menu_items a:hover .icon:after {
   border-color: #f37272;
@@ -127,10 +132,9 @@ html, body {
 }
 /* Para Abir o menu*/
 
-.shazam {
-  /*.content_inner {
-   height: 100%;
-   }*/
+.shazam .page{
+   background-color: #A9A9A9;
+
 }
 .shazam .content {
   transform: rotate(-30deg);
@@ -150,6 +154,16 @@ html, body {
 }
 .shazam .menu_items li:nth-child(3) {
   transition-delay: 0.48s;
+}
+
+div.page.shazam{
+  background-color: #A9A9A9;
+  
+}
+
+div.col-md-12.padron{
+  margin-top: -3;
+  padding-top: -3;
 }
 
 h1 {
@@ -178,11 +192,8 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-align: center;
-  color: white;
+  color: #363636;
   margin-left: 3vh;
-  
-
-
 
 }
 
@@ -214,6 +225,7 @@ body {
 .tit{
   margin-top: 5vh;
   margin-left: -2vh;
+   margin-right: 1vh;
 
 }
 
@@ -223,31 +235,37 @@ p.titulo.animation{
 }
 
 .subtitu{
-  background-color: #8bc440;
+  background-color: #CAEBf2;
   -webkit-border-radius: 10px 10px 30px 10px; /* Para versões antigas do Safari*/
   -moz-border-radius: 10px 10px 30px 10px; /* Para versões antigas do Chrome*/
   border-radius: 10px 10px 30px 10px;
   margin-left: 3vh;
 }
+
 .espaco{
   font-size: min(70px, 6vw);
   text-align: center;
-  color: white;
+  color: #696969;
 }
 .espaco2{
   margin-top: 2vh;
   font-size: min(70px, 6vw);
   text-align: center;
-  color: white;
+  color: #808080;
 }
 .espaco3{
   margin-left: 3vh;
 }
 
 .texto{
-  text-align: justify all;
-  font-size:  min(19px, 3vh);
-  color: white;
+
+  font-size:  min(19px, 2.5vh);
+  color: black;
+
+}
+
+.padron{
+  background-color: #EFEFEF;
 
 }
 
@@ -286,7 +304,7 @@ p.titulo.animation{
 .tit{
   margin-top: 1vh;
   margin-left: 1vh;
-  margin-right: 1vh;
+  margin-right: 2vh;
 
 }
 
