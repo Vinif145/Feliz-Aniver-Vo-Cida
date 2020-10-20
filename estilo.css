@@ -17,6 +17,7 @@ html, body {
 .page {
 
   height: 100%;
+  
 
  
 }
@@ -25,6 +26,9 @@ html, body {
   transform-origin: top left;
   transition: transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
   background-color: #EFEFEF;
+   /*background-image: url(fundodo3.png); 
+   background-repeat: repeat-x;*/
+
 }
 .content_inner {
   height: 50%;
@@ -225,7 +229,7 @@ body {
 .tit{
   margin-top: 5vh;
   margin-left: -2vh;
-   margin-right: 1vh;
+  margin-right: 1vh;
 
 }
 
@@ -269,6 +273,7 @@ p.titulo.animation{
 
 }
 
+
 @media(max-width: 800px){
  ul.menu_items{
   position: absolute;
@@ -306,6 +311,11 @@ p.titulo.animation{
   margin-left: 1vh;
   margin-right: 2vh;
 
+}
+
+div.col-md-12.padron{
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 }
