@@ -273,6 +273,70 @@ p.titulo.animation{
 
 }
 
+#menuland{
+  display: none;
+}
+
+@media (orientation: landscape) {
+
+#menuland{
+  display: block;
+}
+
+nav.navbar-transparente{
+    padding: 15px 0px;
+    background: rgba(0,0,0,1)
+}
+nav.navbar{
+    z-index: 900;
+}
+
+#cont{
+    background-color: white;
+}
+
+#logo{
+    font-size:23px;
+    font-family: 'Merriweather', serif;
+    color:forestgreen;
+    
+}
+
+#logo1{
+    font-size:23px;
+    font-family: 'Merriweather', serif;
+    color:white;
+    margin-bottom: 0px;
+    
+    
+    
+}
+.navbar-light .navbar-nav .nav-link{
+   color: white !important;
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+   color: white;
+}
+
+.navbar-light .navbar-toggler{
+    color:"white";
+    background-color: "white";
+    border-color: rgba(255,255,255,1);
+}
+.divisor{
+    width: 1px;
+    background: white;
+    
+}
+
+
+#teste{
+  display: none;
+}
+
+}
 
 @media(max-width: 800px){
  ul.menu_items{
